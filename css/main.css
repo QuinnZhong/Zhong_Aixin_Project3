@@ -1,0 +1,187 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*Remove this rule, this is only for demo purposes to make the boxes black with white.
+The line height on the <p> tag gives each box a height value*/
+
+p {
+color: rgb(242, 255, 0);
+line-height: 100px;
+background: #000;
+text-align: center;
+margin: 0;
+}
+/*basic reset*/
+/*browsers have built in values for elements so we'll reset a few things to zero*/
+
+
+div,p,body,header,footer,section,article,nav {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+/*END Basic Reset*/
+
+
+/*html selectors*/
+
+body {
+  font-family:'Anton', sans-serif;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+}
+
+
+/*a: Link is for not visited, a:visited is for visited, and just a applies to both.*/
+/*a will also style anchor links*/
+
+a:link, a:visited {
+  text-decoration:none;
+  color: #313131;
+}
+
+a:hover, a:active {
+  text-decoration:none;
+  color: #666; 
+}
+/*hide elements from browser but show for doc outline*/
+
+.hidden 
+{
+display: none;
+}
+
+/*Div is block level and no width specidied therefore stretches full screen*/
+#topBar {
+  background-color:rgb(125, 125, 125);
+  height: 20px;
+}
+
+/*Site Container*/
+/*This is essentially a box that we place the whole site in. We center 
+the box using margin 0 auto and give it a fixed width of 920 + 20px + 
+20px (960px) so it fits on 1024x768 screens.*/
+
+#siteContainer
+{
+  margin: 0 auto;
+  width: 920px;
+  padding-left: 20px;
+  padding-right:20px;
+}
+
+#mainHeader{
+  margin-top: 40px;
+  padding-bottom: 40px;
+  overflow: hidden; /*fixes colapsing parent*/
+  /*http://coding.smashingmagazine.com/2009/10/19 the-mystery-of-css-float-property*/
+  border-bottom: solid 1px #DDD;
+}
+
+#logo {
+  width: 200px;
+  float: left;
+}
+
+#mainNav {
+  float: right;
+  width: 500px;
+}
+
+#promo {
+  margin-top: 150px;
+  overflow: hidden; /*fixes colapsing parent*/
+  border-bottom: solid 1px rgb(0, 0, 0);
+  padding-bottom: 50px;
+ }
+  /*Get rid of this, here just to give different height to promo*/
+
+#promo p {
+  line-height: 500px;
+}
+
+#promoImage {
+  float: left;
+  width: 600px;
+}
+
+#promoText {
+  float: right;
+  width: 280px;
+}
+
+#productInfo {
+  margin-top: 50px;
+  overflow: hidden; /*fixes colapsing parent*/
+  border-bottom: solid 1px rgb(0, 0, 0);
+  padding-bottom: 50px;
+}
+
+/*Get rid of this, here just to give different*/
+#productInfo p{
+  line-height: 500px;
+}
+
+.productDesc {
+  float: left;
+  width: 225px;
+  padding: 2px;
+}
+
+#mainFooter p{
+  line-height: 200px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  overflow: hidden;
+}
+
+#footerNav {
+  float: left;
+  width: 500px;
+}
+
+#copyRight {
+  float: right;
+  width: 310px;
+}
+
+/*About Page*/
+#About {
+  margin-top: 150px;
+  overflow: hidden; /*fixes colapsing parent*/
+  border-bottom: solid 1px rgb(0, 0, 0);
+  padding-bottom: 50px;
+ }
+  /*Get rid of this, here just to give different height to promo*/
+
+#About p {
+  line-height: 600px;
+}
+
+#About2 {
+  margin-top: 50px;
+  overflow: hidden; /*fixes colapsing parent*/
+  border-bottom: solid 1px rgb(0, 0, 0);
+  padding-bottom: 50px;
+ }
+  /*Get rid of this, here just to give different height to promo*/
+
+#About2 p {
+  line-height: 600px;
+}
+
+
+#AboutText {
+  float: left;
+  width: 200px;
+}
+
+#AboutImage {
+  float: right;
+  width: 700px;
+}
